@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficheclientController">
+   <children>
+      <TableView fx:id="tableclient" layoutX="23.0" layoutY="95.0" prefHeight="329.0" prefWidth="781.0">
+        <columns>
+          <TableColumn fx:id="idcol" prefWidth="53.0" text="ID" />
+          <TableColumn fx:id="nomcol" prefWidth="67.0" text="Nom" />
+            <TableColumn fx:id="prenomcol" prefWidth="71.0" text="Prénom" />
+            <TableColumn fx:id="sexecol" prefWidth="67.0" text="Sexe" />
+            <TableColumn fx:id="datenaissancecol" prefWidth="123.0" text="Date de Naissance" />
+            <TableColumn fx:id="emailcol" prefWidth="66.0" text="Email" />
+            <TableColumn fx:id="adressecol" prefWidth="73.0" text="Adresse" />
+            <TableColumn fx:id="handicapcol" prefWidth="68.0" text="Handicap" />
+            <TableColumn fx:id="deshandicapcol" prefWidth="96.0" text="Des Handicap" />
+            <TableColumn fx:id="telcol" prefWidth="96.0" text="N° Téléphone" />
+        </columns>
+      </TableView>
+      <Button fx:id="delete" layoutX="233.0" layoutY="447.0" mnemonicParsing="false" onAction="#SupprimerClient" text="Supprimer" />
+      <Button fx:id="update" layoutX="378.0" layoutY="447.0" mnemonicParsing="false" onAction="#ModifierClient" prefHeight="25.0" prefWidth="72.0" text="Modifier" />
+      <Button fx:id="addother" layoutX="521.0" layoutY="447.0" mnemonicParsing="false" onAction="#AjouterAutreClient" prefHeight="25.0" prefWidth="72.0" text="Ajouter" />
+      <TextField fx:id="rechercherClient" layoutX="310.0" layoutY="38.0" onKeyTyped="#Search" prefHeight="25.0" prefWidth="207.0" promptText="Rechercher Client ..." />
+      <Button fx:id="impression" layoutX="449.0" layoutY="512.0" mnemonicParsing="false" onAction="#Imprimer" prefHeight="25.0" prefWidth="72.0" text="Imprimer" />
+      <Button fx:id="Details" layoutX="305.0" layoutY="512.0" mnemonicParsing="false" onAction="#ShowDets" prefHeight="25.0" prefWidth="72.0" text="Les détails" />
+   </children>
+</AnchorPane>

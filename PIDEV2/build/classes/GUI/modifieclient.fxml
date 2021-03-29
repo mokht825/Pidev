@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ModifieclientController">
+   <children>
+      <Label layoutX="50.0" layoutY="87.0" text="Nom" />
+      <Label layoutX="50.0" layoutY="147.0" text="Prénom" />
+      <Label layoutX="50.0" layoutY="209.0" text="Sexe" />
+      <Label layoutX="29.0" layoutY="271.0" text="Date de naissance" />
+      <Label layoutX="327.0" layoutY="87.0" text="Email" />
+      <Label layoutX="328.0" layoutY="147.0" text="Adresse" />
+      <Label layoutX="327.0" layoutY="209.0" text="Des Handicap" />
+      <Label layoutX="349.0" layoutY="271.0" text="Tel" />
+      <TextField fx:id="nom" layoutX="106.0" layoutY="83.0" />
+      <TextField fx:id="email" layoutX="417.0" layoutY="83.0" />
+      <TextField fx:id="prenom" layoutX="106.0" layoutY="143.0" />
+      <TextField fx:id="adresse" layoutX="417.0" layoutY="143.0" />
+      <TextField fx:id="deshandicap" layoutX="417.0" layoutY="205.0" />
+      <TextField fx:id="tel" layoutX="417.0" layoutY="267.0" />
+      <DatePicker fx:id="datenaissance" layoutX="138.0" layoutY="267.0" />
+      <ComboBox fx:id="sexe" layoutX="106.0" layoutY="205.0" prefWidth="150.0" />
+      <Button fx:id="confirmupdate" layoutX="181.0" layoutY="335.0" mnemonicParsing="false" onAction="#ConfirmerModifierClient" prefHeight="25.0" prefWidth="74.0" text="Valider" />
+      <Button fx:id="Back" layoutX="365.0" layoutY="335.0" mnemonicParsing="false" onAction="#AnnulerModif" prefHeight="25.0" prefWidth="74.0" text="Retour" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/GUI/modifieclient.fxml</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/Entities/Client.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/GUI/Main.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/GUI/JavaFX_QRCodeWriter.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/GUI/AjoutclientController.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/GUI/DetailsClientController.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/GUI/afficheclient.fxml</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/Services/CRUD.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/Test/Main.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/Services/Mailing.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/GUI/DetailsClient.fxml</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/GUI/ajoutclient.fxml</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/Connectivity/MyConnectivity.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/GUI/AfficheclientController.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/GUI/ModifieclientController.java</file>
+            <file>file:/C:/Users/belha/OneDrive/Documents/NetBeansProjects/PIDEV2/src/Entities/DonnéesLocales.java</file>
+        </group>
+    </open-files>
+</project-private>
