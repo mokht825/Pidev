@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="473.0" prefWidth="844.0" style="-fx-background-color: #ac0000;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.gui.NewReservationController">
+   <children>
+      <Button fx:id="goBackBtn" layoutX="27.0" layoutY="21.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #ac0000;" text="&lt; Page Precedent" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="108.0" text="Selectionner date:" textFill="#fdf6f6" />
+      <Label layoutX="12.0" layoutY="164.0" text="Selectionner temp:" textFill="#fdf6f6" />
+      <Label layoutX="8.0" layoutY="216.0" text="Selectionner  type de Sport:" textFill="#fdf6f6" />
+      <DatePicker fx:id="dateId" layoutX="159.0" layoutY="103.0" prefHeight="26.0" prefWidth="159.0" />
+      <ChoiceBox fx:id="hrId" layoutX="163.0" layoutY="160.0" prefHeight="26.0" prefWidth="61.0" />
+      <ChoiceBox fx:id="minId" layoutX="270.0" layoutY="159.0" prefHeight="26.0" prefWidth="48.0" />
+      <Label layoutX="239.0" layoutY="164.0" text="Min" textFill="#f5f0f0" />
+      <Label layoutX="137.0" layoutY="164.0" text="Hr:" textFill="#faf6f6" />
+      <ComboBox fx:id="typeCombo" layoutX="163.0" layoutY="212.0" onAction="#typeSelected" prefWidth="150.0" />
+      <Button fx:id="reserverBtn" blendMode="ADD" layoutX="20.0" layoutY="418.0" mnemonicParsing="false" onAction="#reserver" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #a30000;" text="Confirmer la reservation." textFill="#faf2f2" />
+      <Label layoutX="16.0" layoutY="275.0" text="Duree du seance:" textFill="WHITE" />
+      <ComboBox fx:id="dureeCombo" layoutX="164.0" layoutY="271.0" onAction="#dureeSelected" prefWidth="150.0" />
+      <Label layoutX="362.0" layoutY="85.0" text="Selectionner un coach:" textFill="WHITE" />
+      <Button layoutX="622.0" layoutY="356.0" mnemonicParsing="false" onAction="#showCoachDetails" text="Voir plus de détails de l'entraîneur." />
+      <Button fx:id="rechercherBtn" layoutX="111.0" layoutY="355.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="26.0" prefWidth="95.0" text="Rechercher" />
+      <TableView fx:id="coachListView" layoutX="361.0" layoutY="109.0" prefHeight="230.0" prefWidth="454.0">
+        <columns>
+          <TableColumn fx:id="coachName" prefWidth="120.0" text="Nom du Coach" />
+          <TableColumn fx:id="coachLast" prefWidth="115.19998168945312" text="Prenom du Coach" />
+            <TableColumn fx:id="coachGenre" prefWidth="96.800048828125" text="Genre" />
+            <TableColumn fx:id="coachLocalisation" prefWidth="90.4000244140625" text="Localisation" />
+            <TableColumn fx:id="id" prefWidth="33.5999755859375" text="Id" />
+        </columns>
+      </TableView>
+      <Text fx:id="typeText" fill="#faef12" layoutX="163.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="dureeText" fill="#faef12" layoutX="164.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="heureText" fill="#faef12" layoutX="159.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="dateText" fill="#faef12" layoutX="164.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Label layoutX="482.0" layoutY="33.0" prefHeight="26.0" prefWidth="211.0" text="List des Coach disponibles." textFill="#fdf916">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

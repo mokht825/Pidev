@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="844.0" style="-fx-background-color: #8d0000;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.gui.ClientPageController">
+   <children>
+      <AnchorPane layoutX="31.0" layoutY="164.0" prefHeight="280.0" prefWidth="764.0" style="-fx-background-color: #ffdcdc;">
+         <children>
+            <TableView fx:id="tableView" layoutX="-7.0" prefHeight="303.0" prefWidth="770.0">
+              <columns>
+                <TableColumn fx:id="numRes" prefWidth="100.0" text="Reservation" />
+                <TableColumn fx:id="coachName" prefWidth="100.0" text="Coach name" />
+                  <TableColumn fx:id="coachLast" prefWidth="100.0" text="Coach LastName" />
+                  <TableColumn fx:id="date" prefWidth="90.0" text="Date" />
+                  <TableColumn fx:id="heur" prefWidth="90.0" text="Heur" />
+                  <TableColumn fx:id="localisation" prefWidth="100.0" text="Localisation" />
+                  <TableColumn fx:id="type" prefWidth="100.0" text="Sport Type" />
+                  <TableColumn fx:id="duree" prefWidth="95.0" text="Duree en Hr" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+      <Button fx:id="BtnNewReservation" layoutX="31.0" layoutY="493.0" mnemonicParsing="false" onAction="#newReservation" prefWidth="190.0" style="-fx-background-color: #a30000;" text="New Reservation" textFill="#f7f2f2" />
+      <ChoiceBox fx:id="choiceBox" layoutX="214.0" layoutY="74.0" prefHeight="26.0" prefWidth="110.0" />
+      <Button fx:id="btnChercher" layoutX="503.0" layoutY="73.0" mnemonicParsing="false" onAction="#chercher" prefHeight="26.0" prefWidth="109.0" text="chercher" />
+      <Button fx:id="BtnAnuulerTt" layoutX="576.0" layoutY="492.0" mnemonicParsing="false" onAction="#annuler" prefHeight="26.0" prefWidth="218.0" text=" Annuler la reservation selectionnee" />
+      <Button fx:id="btnAfficherTt" layoutX="217.0" layoutY="33.0" mnemonicParsing="false" onAction="#afficherTtClient" prefHeight="13.0" prefWidth="103.0" text="Afficher tout" />
+      <Label layoutX="31.0" layoutY="36.0" text="Afficher tout mes resevation:" textFill="#d2c8c8">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="78.0" text="Ou bien chercher par:" textFill="#dfd9d9">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="valeurRechercher" layoutX="338.0" layoutY="74.0" promptText="valeur a chercher" />
+      <Button fx:id="deconnecter" layoutX="739.0" layoutY="23.0" mnemonicParsing="false" onAction="#deconnecter" style="-fx-background-color: #a30000;" text="Deconnecter" textFill="#faf6f6" />
+      <Label layoutX="333.0" layoutY="120.0" text="Mes Reservations." textFill="#f4f821">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
